@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk-UA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kembrid</title>
+
+    <link rel="shortcut icon" href="icons/favicon.svg" type="image/svg">
 
     <!--Reset style CSS-->
     <link rel="stylesheet" href="css/reset.css">
@@ -34,31 +36,36 @@
             <div class="menu">
                 <ul class="list">
                     <li class="item">
-                        <a href="#aboutUs">О нас</a>
+                        <a href="#aboutUs" class="lng-about-us-menu">О нас</a>
                     </li>
                     <li class="item">
-                        <a href="#catalog">Услуги</a>
+                        <a href="#catalog" class="lng-services-menu">Услуги</a>
                     </li>
                     <li class="item">
-                        <a href="#portfolio">Портфолио</a>
+                        <a href="#portfolio" class="lng-portfolio-menu">Портфолио</a>
                     </li>
                     <li class="item">
-                        <a href="#feedback">Связаться с нами</a>
+                        <a href="#feedback" class="lng-connect-menu">Связаться с нами</a>
                     </li>
                 </ul>
                 <a id="phone" class="contact-phone" href="tel: +380685064412">
-                    <img id="imgPhone" class="phone" src="icons/white-phone.svg">
+                    <!--                    <img id="imgPhone" class="phone" src="icons/white-phone.svg">-->
+                    <div class="phone"></div>
                     +380685064412
                 </a>
                 <ul class="language">
-                    <li class="ua">UA</li>
-                    <li class="ru">RU</li>
+                    <li id="ua" class="ua">UA</li>
+                    <li id="ru" class="ru">RU</li>
                 </ul>
             </div>
             <nav>
                 <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
                 <label id="toggle" class="m-menu__toggle" for="menu">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
                 </label>
                 <label class="m-menu__overlay"></label>
                 <div class="m-menu">
@@ -74,25 +81,30 @@
                     <div class="menu-content">
                         <ul class="list">
                             <li class="item">
-                                <a href="#aboutUs">О нас</a>
+                                <a href="#aboutUs" class="lng-about-us-menu-mobile">О нас</a>
                             </li>
                             <li class="item">
-                                <a href="#catalog">Услуги</a>
+                                <a href="#catalog" class="lng-services-menu-mobile">Услуги</a>
                             </li>
                             <li class="item">
-                                <a href="#portfolio">Портфолио</a>
+                                <a href="#portfolio" class="lng-portfolio-menu-mobile">Портфолио</a>
                             </li>
                             <li class="item">
-                                <a href="#feedback">Связаться с нами</a>
+                                <a href="#feedback" class="lng-connect-menu-mobile">Связаться с нами</a>
                             </li>
                         </ul>
+<!--                        <a class="contact-phone" href="tel: +380685064412">-->
+<!--                            <img class="phone" src="icons/white-phone.svg">-->
+<!--                            +380685064412-->
+<!--                        </a>-->
                         <a class="contact-phone" href="tel: +380685064412">
-                            <img class="phone" src="icons/white-phone.svg">
+                            <!--                    <img id="imgPhone" class="phone" src="icons/white-phone.svg">-->
+                            <div class="phone"></div>
                             +380685064412
                         </a>
                         <ul class="language">
-                            <li class="ua">UA</li>
-                            <li class="ru">RU</li>
+                            <li id="uaMobile" class="ua">UA</li>
+                            <li id="ruMobile" class="ru">RU</li>
                         </ul>
                     </div>
                 </div>
@@ -110,109 +122,122 @@
             <div class="container">
                 <div class="content">
                     <div class="text">
-                        <h1 class="title">Мебель в новом формате</h1>
-                        <p class="description">Следует отметить, что сплочённость команды профессионалов говорит о возможностях как самодостаточны.</p>
+                        <h1 class="title lng-furniture-title-slide-one">Меблі у новому форматі</h1>
+                        <p class="description lng-furniture-description-slide-one">Виготовлення меблів саме під вашу оселю та особливий підхід до кожного клієнта</p>
                     </div>
-                    <div class="messenger-icons">
-                        <a class="whatsapp" href="https://wa.me/380680862010">
-                            <img src="icons/white-whatsapp.svg">
-                        </a>
-                        <a class="telegram" href="https://t.me/YarMytnyk">
-                            <img src="icons/white-telegram.svg">
-                        </a>
-                    </div>
+                    <!--                    <div class="messenger-icons">-->
+                    <!--                        <a class="whatsapp" href="https://wa.me/380680862010">-->
+                    <!--                            <img src="icons/white-whatsapp.svg">-->
+                    <!--                        </a>-->
+                    <!--                        <a class="telegram" href="https://t.me/YarMytnyk">-->
+                    <!--                            <img src="icons/white-telegram.svg">-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
                 </div>
-                <a class="button" href="#feedback">Оставить заявку</a>
+                <a class="button lng-furniture-button-slide-one" href="#feedback">Оставить заявку</a>
                 <div class="pagination-counter">01 / 03</div>
             </div>
-            <div class="card">
-                <div class="head">
-                    <span class="date">13 НОЯБРЯ 2021</span>
-                    <div class="controls">
-                        <!-- If we need navigation buttons -->
-                        <div class="furniture-slider-swiper-button-prev">
-                            <img src="icons/dark-angle-left.svg">
-                        </div>
-                        <div class="furniture-slider-swiper-button-next">
-                            <img src="icons/dark-angle-right.svg">
-                        </div>
-                    </div>
-                </div>
-                <p class="title">Угловая кухня, темно-серая, из ЛДСП и пластика</p>
-                <p class="description">Краткое описание чего-то там.</p>
-            </div>
+            <!--            <div class="card">-->
+            <!--                <div class="head">-->
+            <!--                    <span class="date lng-furniture-date-slide-one">13 НОЯБРЯ 2021</span>-->
+            <!--                    <div class="controls">-->
+            <!--                        &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+            <!--                        <div class="furniture-slider-swiper-button-prev">-->
+            <!--                            <img src="icons/dark-angle-left.svg">-->
+            <!--                        </div>-->
+            <!--                        <div class="furniture-slider-swiper-button-next">-->
+            <!--                            <img src="icons/dark-angle-right.svg">-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <p class="title lng-furniture-card-title-slide-one">Угловая кухня, темно-серая, из ЛДСП и пластика</p>-->
+            <!--                <p class="description lng-furniture-card-description-slide-one">Краткое описание чего-то там.</p>-->
+            <!--            </div>-->
         </div>
         <div class="swiper-slide furniture-slide-two">
             <div class="container">
                 <div class="content">
                     <div class="text">
-                        <h1 class="title">Мебель в новом формате</h1>
-                        <p class="description">Следует отметить, что сплочённость команды профессионалов говорит о возможностях как самодостаточны.</p>
+                        <h1 class="title lng-furniture-title-slide-two">Меблі у новому форматі</h1>
+                        <p class="description lng-furniture-description-slide-two">Виготовлення меблів саме під вашу оселю та особливий підхід до кожного клієнта</p>
                     </div>
-                    <div class="messenger-icons">
-                        <a class="whatsapp" href="">
-                            <img src="icons/white-whatsapp.svg">
-                        </a>
-                        <a class="telegram" href="">
-                            <img src="icons/white-telegram.svg">
-                        </a>
-                    </div>
+                    <!--                    <div class="messenger-icons">-->
+                    <!--                        <a class="whatsapp" href="">-->
+                    <!--                            <img src="icons/white-whatsapp.svg">-->
+                    <!--                        </a>-->
+                    <!--                        <a class="telegram" href="">-->
+                    <!--                            <img src="icons/white-telegram.svg">-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
                 </div>
-                <a class="button" href="#feedback">Оставить заявку</a>
+                <a class="button lng-furniture-button-slide-two" href="#feedback">Оставить заявку</a>
                 <div class="pagination-counter">02 / 03</div>
             </div>
-            <div class="card">
-                <div class="head">
-                    <span class="date">11 НОЯБРЯ 2021</span>
-                    <div class="controls">
-                        <!-- If we need navigation buttons -->
-                        <div class="furniture-slider-swiper-button-prev">
-                            <img src="icons/dark-angle-left.svg">
-                        </div>
-                        <div class="furniture-slider-swiper-button-next">
-                            <img src="icons/dark-angle-right.svg">
-                        </div>
-                    </div>
-                </div>
-                <p class="title">Угловая кухня, темно-серая, из ЛДСП и пластика</p>
-                <p class="description">Краткое описание чего-то там.</p>
-            </div>
+            <!--            <div class="card">-->
+            <!--                <div class="head">-->
+            <!--                    <span class="date">11 НОЯБРЯ 2021</span>-->
+            <!--                    <div class="controls">-->
+            <!--                        &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+            <!--                        <div class="furniture-slider-swiper-button-prev">-->
+            <!--                            <img src="icons/dark-angle-left.svg">-->
+            <!--                        </div>-->
+            <!--                        <div class="furniture-slider-swiper-button-next">-->
+            <!--                            <img src="icons/dark-angle-right.svg">-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <p class="title">Угловая кухня, темно-серая, из ЛДСП и пластика</p>-->
+            <!--                <p class="description">Краткое описание чего-то там.</p>-->
+            <!--            </div>-->
         </div>
         <div class="swiper-slide furniture-slide-three">
             <div class="container">
                 <div class="content">
                     <div class="text">
-                        <h1 class="title">Мебель в новом формате</h1>
-                        <p class="description">Следует отметить, что сплочённость команды профессионалов говорит о возможностях как самодостаточны.</p>
+                        <h1 class="title lng-furniture-title-slide-three">Меблі у новому форматі</h1>
+                        <p class="description lng-furniture-description-slide-three">Виготовлення меблів саме під вашу оселю та особливий підхід до кожного клієнта</p>
                     </div>
-                    <div class="messenger-icons">
-                        <a class="whatsapp" href="">
-                            <img src="icons/white-whatsapp.svg">
-                        </a>
-                        <a class="telegram" href="">
-                            <img src="icons/white-telegram.svg">
-                        </a>
-                    </div>
+                    <!--                    <div class="messenger-icons">-->
+                    <!--                        <a class="whatsapp" href="">-->
+                    <!--                            <img src="icons/white-whatsapp.svg">-->
+                    <!--                        </a>-->
+                    <!--                        <a class="telegram" href="">-->
+                    <!--                            <img src="icons/white-telegram.svg">-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
                 </div>
-                <a class="button" href="#feedback">Оставить заявку</a>
+                <a class="button lng-furniture-button-slide-three" href="#feedback">Оставить заявку</a>
                 <div class="pagination-counter">03 / 03</div>
             </div>
-            <div class="card">
-                <div class="head">
-                    <span class="date">19 НОЯБРЯ 2021</span>
-                    <div class="controls">
-                        <!-- If we need navigation buttons -->
-                        <div class="furniture-slider-swiper-button-prev">
-                            <img src="icons/dark-angle-left.svg">
-                        </div>
-                        <div class="furniture-slider-swiper-button-next">
-                            <img src="icons/dark-angle-right.svg">
-                        </div>
-                    </div>
-                </div>
-                <p class="title">Угловая кухня, темно-серая, из ЛДСП и пластика</p>
-                <p class="description">Краткое описание чего-то там.</p>
-            </div>
+            <!--            <div class="card">-->
+            <!--                <div class="head">-->
+            <!--                    <span class="date">19 НОЯБРЯ 2021</span>-->
+            <!--                    <div class="controls">-->
+            <!--                        &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+            <!--                        <div class="furniture-slider-swiper-button-prev">-->
+            <!--                            <img src="icons/dark-angle-left.svg">-->
+            <!--                        </div>-->
+            <!--                        <div class="furniture-slider-swiper-button-next">-->
+            <!--                            <img src="icons/dark-angle-right.svg">-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <p class="title">Угловая кухня, темно-серая, из ЛДСП и пластика</p>-->
+            <!--                <p class="description">Краткое описание чего-то там.</p>-->
+            <!--            </div>-->
+        </div>
+    </div>
+    <div class="messenger-icons">
+        <a class="whatsapp" href="https://wa.me/380680862010" target="_blank" rel="noopener noreferrer"></a>
+        <a class="telegram" href="https://t.me/YarMytnyk" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+    <div class="controls">
+        <!-- If we need navigation buttons -->
+        <div class="furniture-slider-swiper-button-prev">
+            <img src="icons/white-angle-left.svg">
+        </div>
+        <div class="furniture-slider-swiper-button-next">
+            <img src="icons/white-angle-right.svg">
         </div>
     </div>
     <!-- If we need pagination -->
@@ -220,10 +245,10 @@
 </div>
 
 <section id="aboutUs" class="individual-approach container">
-    <h3 class="title">Индивидуальный подход</h3>
+    <h3 class="title lng-individual-approach-title">Наші переваги</h3>
     <div class="text">
-        <p class="text-top">Вот вам яркий пример современных тенденций — современная методология разработки создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса укрепления моральных ценностей.</p>
-        <p class="text-bottom">С другой стороны, граница обучения кадров играет определяющее значение.</p>
+        <p class="text-top lng-individual-approach-text-top">Це якість, а саме головне гарантія що роботи будуть виконані вчасно.</p>
+        <p class="text-bottom lng-individual-approach-text-bottom">З вами будуть працювати наші найкращі майстри з якими ви зможете детально обговорити  ваш проект та обрати найбільш вдалі варіанти.</p>
     </div>
 </section>
 
@@ -234,24 +259,24 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="item-mob">
-                <h3 class="title">Полный цикл</h3>
-                <p class="description">С другой стороны, граница обучения кадров играет определяющее значение.</p>
+                <h3 class="title lng-custom-swiper-mobile-title-slide-one">Повний цикл</h3>
+                <p class="description lng-custom-swiper-mobile-description-slide-one">Замір -—> розрахунок виробу та обгворювання деталей —> підготовка деталей  —-> монтаж</p>
             </div>
             <img class="custom-slider-image" src="img/custom-slider-1.jpg">
             <img class="custom-slider-image" src="img/custom-slider-2.jpg">
         </div>
         <div class="swiper-slide">
             <div class="item-mob">
-                <h3 class="title">Профессионализм</h3>
-                <p class="description">С другой стороны, граница обучения кадров играет определяющее значение.</p>
+                <h3 class="title lng-custom-swiper-mobile-title-slide-two">Професіоналізм</h3>
+                <p class="description lng-custom-swiper-mobile-description-slide-two">Наші майстри вже працюють більше 20 років і мають чудовий досвід</p>
             </div>
             <img class="custom-slider-image" src="img/custom-slider-3.jpg">
             <img class="custom-slider-image" src="img/custom-slider-4.jpg">
         </div>
         <div class="swiper-slide">
             <div class="item-mob">
-                <h3 class="title">Качество материалов</h3>
-                <p class="description">С другой стороны, граница обучения кадров играет определяющее значение.</p>
+                <h3 class="title lng-custom-swiper-mobile-title-slide-three">Якість матеріалів</h3>
+                <p class="description lng-custom-swiper-mobile-description-slide-three">Ми працюємо з такими компаніями як "Віяр" "Берест" та "Лмастер"</p>
             </div>
             <img class="custom-slider-image" src="img/custom-slider-5.jpg">
             <img class="custom-slider-image" src="img/custom-slider-6.jpg">
@@ -260,53 +285,53 @@
 </section>
 
 <section class="text-company-data container">
-    <h3 class="title">О нашей компании</h3>
+    <h3 class="title lng-text-company-data-title">О нашей компании</h3>
     <div class="text">
-        <p class="text-top">Прежде всего, понимание сути ресурсосберегающих технологий не даёт нам иного выбора, кроме определения кластеризации усилий. Банальные, но неопровержимые выводы, а также представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, ассоциативно распределены по отраслям.</p>
-        <p class="text-bottom">С другой стороны, граница обучения кадров играет определяющее значение.</p>
+        <p class="text-top lng-text-company-data-text-top">Прежде всего, понимание сути ресурсосберегающих технологий не даёт нам иного выбора, кроме определения кластеризации усилий. Банальные, но неопровержимые выводы, а также представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, ассоциативно распределены по отраслям.</p>
+        <p class="text-bottom lng-text-company-data-text-bottom"> .</p>
     </div>
 </section>
 
 <section id="catalog" class="catalog container">
     <div class="main-card">
-        <h3 class="title">Каталог мебели</h3>
-        <p class="description">А также элементы политического процесса, инициированные исключительно. Вот сюда втулим что-нибудь про реставрацию.</p>
-        <a class="button" href="#feedback">Оставить заявку</a>
+        <h3 class="title lng-catalog-main-card-title">Каталог мебели</h3>
+<!--        <p class="description">А также элементы политического процесса, инициированные исключительно. Вот сюда втулим что-нибудь про реставрацию.</p>-->
+        <a class="button lng-catalog-main-card-button" href="#feedback">Оставить заявку</a>
     </div>
     <div class="card">
-        <div class="hov-title">кухня</div>
+        <div class="hov-title lng-catalog-kitchen-card-title">кухня</div>
         <img class="card-img" src="img/catalog-1.jpg">
     </div>
     <div class="card">
-        <div class="hov-title">ДЕтская</div>
+        <div class="hov-title lng-catalog-childrens-card-title">ДЕтская</div>
         <img class="card-img" src="img/catalog-2.jpg">
     </div>
     <div class="card">
-        <div class="hov-title">Спальня</div>
+        <div class="hov-title lng-catalog-bedroom-card-title">Спальня</div>
         <img class="card-img" src="img/catalog-3.jpg">
     </div>
     <div class="card">
-        <div class="hov-title">шкафы</div>
+        <div class="hov-title lng-catalog-cupboard-card-title">шкафы</div>
         <img class="card-img" src="img/catalog-4.jpg">
     </div>
     <div class="card">
-        <div class="hov-title">Сад</div>
+        <div class="hov-title lng-catalog-garden-card-title">Сад</div>
         <img class="card-img" src="img/catalog-5.jpg">
     </div>
 </section>
 
 <section class="work-process container">
     <div class="text">
-        <h3 class="title">Процесс работы</h3>
-        <p class="description">А также элементы политического процесса, инициированные.</p>
+        <h3 class="title lng-work-process-title">Процесс работы</h3>
+<!--        <p class="description">А также элементы политического процесса, инициированные.</p>-->
     </div>
     <div class="list-container">
         <img class="work-process-nubers-image"  src="icons/work-process-nubers.svg">
         <ul class="list">
-            <li class="item">Вы оставляете завку на нашем сайте. Сюда что-то еще. И еще.</li>
-            <li class="item">Отдел продаж связывается с вами. Сюда что-то еще. И еще.</li>
-            <li class="item">Дизайнер прорабатывает проект. Сюда что-то еще. И еще.</li>
-            <li class="item">Производство изготавливает мебель. Сюда что-то еще. И еще.</li>
+            <li class="item lng-work-process-item-one">Ви залишаєте заявку на нашому сайті або пишіть нам на телеграм</li>
+            <li class="item lng-work-process-item-two">Наш майстер зв'яжеться з вами</li>
+            <li class="item lng-work-process-item-three">Підготовка до запуску в роботу</li>
+            <li class="item lng-work-process-item-four">Виготовлення та монтаж</li>
         </ul>
     </div>
 </section>
@@ -318,8 +343,8 @@
             <div class="slide-container">
                 <div class="left">
                     <div class="text">
-                        <h3 class="title">Портфолио</h3>
-                        <p class="description">А также элементы политического процесса, инициированные исключительно синтетически, рассмотрены исключительно в разрезе.</p>
+                        <h3 class="title lng-portfolio-slider-slide-one-title">Портфоліо</h3>
+                        <p class="description lng-portfolio-slider-slide-one-description">Вже виконані роботи</p>
                     </div>
                     <div class="bottom">
                         <div class="pagination-counter">01 / 03</div>
@@ -344,8 +369,8 @@
             <div class="slide-container">
                 <div class="left">
                     <div class="text">
-                        <h3 class="title">Портфолио</h3>
-                        <p class="description">А также элементы политического процесса, инициированные исключительно синтетически, рассмотрены исключительно в разрезе.</p>
+                        <h3 class="title lng-portfolio-slider-slide-two-title">Портфоліо</h3>
+                        <p class="description lng-portfolio-slider-slide-two-description">Вже виконані роботи</p>
                     </div>
                     <div class="bottom">
                         <div class="pagination-counter">02 / 03</div>
@@ -370,8 +395,8 @@
             <div class="slide-container">
                 <div class="left">
                     <div class="text">
-                        <h3 class="title">Портфолио</h3>
-                        <p class="description">А также элементы политического процесса, инициированные исключительно синтетически, рассмотрены исключительно в разрезе.</p>
+                        <h3 class="title lng-portfolio-slider-slide-three-title">Портфоліо</h3>
+                        <p class="description lng-portfolio-slider-slide-three-description">Вже виконані роботи</p>
                     </div>
                     <div class="bottom">
                         <div class="pagination-counter">03 / 03</div>
@@ -400,15 +425,15 @@
         <img class="arrow" src="icons/discuss-your-project-arrow.svg">
         <img class="chair" src="img/discuss-your-project-chair.png">
     </div>
-    <h1 class="title">Давайте обсудим ваш проект</h1>
-    <p class="description">На все товары мы предоставляем гарантию и имеем искреннюю заинтересованность в удовлетворении Ваших нужд.</p>
-    <a class="button" href="#feedback">Оставить заявку</a>
+    <h1 class="title lng-discuss-your-project-title">Давайте обсудим ваш проект</h1>
+    <p class="description lng-discuss-your-project-description">На всі товари ми надаємо гарантію та маємо щиру зацікавленість у задоволенні Ваших потреб.</p>
+    <a class="button lng-discuss-your-project-button" href="#feedback">Оставить заявку</a>
 </section>
 
 <section class="other-projects container">
     <div class="main-card">
-        <h3 class="title">Другие проекты</h3>
-        <p class="description">А также элементы политического процесса.</p>
+        <h3 class="title lng-other-projects-title">Другие проекты</h3>
+<!--        <p class="description">А также элементы политического процесса.</p>-->
     </div>
     <img class="card-img" src="img/other-projects-1.jpg">
     <img class="card-img" src="img/other-projects-2.jpg">
@@ -422,61 +447,53 @@
 <section id="feedback" class="discuss-your-project-form">
     <div class="form-container container">
         <div class="text">
-            <h1 class="title">обсудим ваш проект</h1>
-            <p class="description">Мы поможем вам рассчитать стоимость в течении 5 минут.</p>
+            <h1 class="title lng-discuss-your-project-form-title">обсудим ваш проект</h1>
+            <p class="description lng-discuss-your-project-form-description">Мы поможем вам рассчитать стоимость в течении 5 минут.</p>
         </div>
         <form action="myform" class="form">
             <label for="name" class="input">
                 <input type="text" id="name" placeholder="&nbsp;">
-                <span class="label">Ваше имя</span>
+                <span class="label lng-discuss-your-project-form-label-name">Ваше имя</span>
                 <span class="focus-bg"></span>
             </label>
             <label for="number" class="input">
                 <input type="text" id="number" placeholder="&nbsp;">
-                <span class="label">Ваш телефон</span>
+                <span class="label lng-discuss-your-project-form-label-phone">Ваш телефон</span>
                 <span class="focus-bg"></span>
             </label>
             <div class="checkbox">
                 <input type="checkbox" id="personalData" name="personalData" value="personalData">
-                <label for="personalData">Согласен(на) на обработку персональных данных</label>
+                <label for="personalData" class="lng-discuss-your-project-form-label-personal-data">Согласен(на) на обработку персональных данных</label>
             </div>
-            <button class="button" type="submit" value="myform">Оставить заявку</button>
+            <button class="button lng-discuss-your-project-form-button" type="submit" value="myform">Оставить заявку</button>
         </form>
     </div>
 </section>
-
-<div id="form_188934_1"></div>
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push({formId:188934,host:"formdesigner.com.ua",formHeight:100, el: "form_188934_1",center: 1,scroll: 0});
-        var s = d.createElement("script"), g = "getElementsByTagName";
-        s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.com.ua/js/iform.js?v=0.0.3";
-        var h=d[g]("head")[0] || d[g]("body")[0];
-        h.appendChild(s);
-    })(document, window, "fdforms");
-</script>
 
 <footer class="footer">
     <div class="container">
         <div class="top">
             <div class="column">
-                <h1 class="title">Контакты</h1>
-                <div class="icons">
-                    <img src="icons/white-telegram.svg">
-                    <img src="icons/white-whatsapp.svg">
+                <h1 class="title lng-footer-contact-title">Контакты</h1>
+                <!--                <div class="icons">-->
+                <!--                    <img src="icons/white-telegram.svg">-->
+                <!--                    <img src="icons/white-whatsapp.svg">-->
+                <!--                </div>-->
+                <div class="messenger-icons">
+                    <a class="telegram" href="https://t.me/YarMytnyk" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="whatsapp" href="https://wa.me/380680862010" target="_blank" rel="noopener noreferrer"></a>
                 </div>
             </div>
             <div class="column" >
-                <h1 class="title">адрес</h1>
-                <p class="description">м. Київ <br>вул. Степана Бандери 66</p>
+                <h1 class="title lng-footer-address-title">адрес</h1>
+                <p class="description lng-footer-address-description">м. Київ <br>вул. Степана Бандери 66</p>
             </div>
             <div class="column">
-                <h1 class="title">Телефон</h1>
+                <h1 class="title lng-footer-phone-title">Телефон</h1>
                 <p class="description">+380685064412</p>
             </div>
             <div class="column">
-                <h1 class="title">Почта</h1>
+                <h1 class="title lng-footer-mail-title">Почта</h1>
                 <p class="description">moonlight5581079@gmail.com</p>
             </div>
         </div>
@@ -485,10 +502,10 @@
         <div class="container content">
             <div class="logo">Kembrid</div>
             <div class="copyright">© 2022 All Rights Reserved</div>
-            <div class="up">
-                <a href="#" class="text">Наверх</a>
+            <a href="#" class="up">
+                <div class="lng-footer-up">Наверх</div>
                 <img src="icons/white-arrow-up.svg">
-            </div>
+            </a>
         </div>
     </div>
 </footer>
@@ -498,6 +515,8 @@
 
 <!--My script JS-->
 <script src="js/script.js"></script>
+<script src="js/languageArr.js"></script>
+<script src="js/language.js"></script>
 <script src="js/furniture-slider.js"></script>
 <script src="js/custom-slider.js"></script>
 <script src="js/portfolio-slider.js"></script>

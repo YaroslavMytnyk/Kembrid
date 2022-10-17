@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 17.27">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MicrosoftSansSerif, 'Microsoft Sans Serif';
+        font-size: 14px;
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: gray;
+        stroke-width: .1px;
+      }
+    </style>
+  </defs>
+    <circle class="cls-2" cx="8.05" cy="8.05" r="8"/>
+    <text class="cls-1" transform="translate(2.78 13.18)"><tspan x="0" y="0">K</tspan></text>
+</svg>
